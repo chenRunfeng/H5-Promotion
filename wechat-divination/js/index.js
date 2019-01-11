@@ -7,7 +7,7 @@ function start() {
     $('.qiancover').hide();
     $('.decode').hide();
     $('.result').show();
-    // setTimeout(showDecode, 3000);
+     setTimeout(showDecode, 3000);
 }
 
 // 显示正在解签
@@ -18,9 +18,11 @@ function showDecode() {
 }
 
 function jumpToDecode(){
-    var urls = ["#", "#"];
-    var jumpTo = urls[parseInt(Math.random() * urls.length)];
-    window.location = jumpTo;
+    //var urls = ["#", "#"];
+    //var jumpTo = urls[parseInt(Math.random() * urls.length)];
+    //window.location = jumpTo;
+    $('.decode').hide();
+    $('.flip').show();
 };
 
 
